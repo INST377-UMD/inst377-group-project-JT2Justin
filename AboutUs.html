@@ -1,0 +1,173 @@
+<html>
+
+<head>
+    <title>About Us </title>
+</head>
+<style>
+    #h1 {
+        text-align: center;
+        color: black;
+        margin-top: 0;
+    }
+
+    #main-nav {
+        background-color: #B0E0E6;
+    }
+
+    #main-nav ul {
+        list-style-type: none;
+        margin: 10;
+        padding: 10;
+    }
+
+    #main-nav ul li {
+        margin-right: 100px;
+        display: inline-block;
+    }
+
+    #main-nav li:hover {
+        background-color: #87ceeb;
+        color: azure;
+
+    }
+
+    footer {
+        text-align: center;
+        background-color: gray;
+        color: azure;
+        margin: 10;
+        clear: both;
+    }
+
+    body {
+        background-color: #fff0f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    #inquiry {
+        border: 1px solid black;
+        padding: 50px;
+    }
+
+    .faq {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .faq button {
+        margin: 5px;
+        align-items: center;
+        background-color: #fee6e3;
+        border: 2px solid #111;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #111;
+        cursor: pointer;
+        display: flex;
+
+        font-family: Inter, sans-serif;
+        font-size: 16px;
+        height: 48px;
+        justify-content: center;
+        line-height: 24px;
+
+        padding: 0 25px;
+        position: relative;
+        text-align: center;
+
+        touch-action: manipulation;
+    }
+
+    .faq button::after {
+        background-color: #111;
+        border-radius: 8px;
+        content: "";
+        display: block;
+        height: 48px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        top: -2px;
+        transform: translate(8px, 8px);
+        transition: transform .2s ease-out;
+        z-index: -1;
+    }
+
+    .faq button :hover:after {
+        transform: translate(0, 0);
+    }
+
+    .faq button :active {
+
+        outline: 0;
+    }
+
+    .faq button:hover {
+        outline: 0;
+    }
+
+    @media (min-width: 768px) {
+        .main-content {
+            padding: 0 40px;
+        }
+    }
+    p{
+        text-align: center;
+        font-size: larger;
+    }
+</style>
+
+
+<body>
+
+    <!--Page head-->
+    <header id="h1">
+        <h1>About Us </h1>
+    </header>
+
+    <!--Main navigation section-->
+
+    <nav id="main-nav">
+        <ul>
+            <li><a href="?page=Home">Home</a></li>
+            <li><a href="?page=About%20us">About us</a></li>
+            <li><a href="?page=Help">Help</a></li>
+            
+        </ul>
+    </nav>
+
+
+    <h1>Our Mission</h1>
+    <p> InstaChef focuses on the issue of college students struggling to find budget
+        friendly and efficient recipes. The main stakeholders of this issue include the students, who are
+        facing difficulty planning for meals, and their parents who are likely concerned about their
+        health/meal planning while at school. Further, the university administration would be concerned
+        about the well being of the students, including ensuring that students are eating adequate meals
+        on campus. Our system will allow students to choose a category of meal based on the provided options, and use
+        that information to recommend potential meals to make. The API we are using is the:
+        https://www.themealdb.com/api.php. This API contains numerous recipes and it allows users to filter
+        recipes by main ingredients. Our app will provide users with multiple recipe ideas with a main
+        ingredient of their choice from the API. The front end technologies we’ll be using to solve this
+        challenge will be HTML and Javascript. Our system will help alleviate the pain college students
+        go through researching meals to cook on the web, and determining what ingredients are required.</p>
+
+    <h1>Need More Help? Check out our FAQ page!</h1>
+    <h2>
+        
+        <div class = "faq">
+            <a href="?page=Help">
+                <button class="faq">FAQ</button>
+            </a>
+        </div>
+    </h2>
+
+</body>
+
+<footer>This site belongs to Insta-Chef</footer>
+
+</html>
